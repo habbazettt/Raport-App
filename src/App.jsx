@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import { getNilai } from "./data/data.raport"
 import { Triangle } from "react-loader-spinner"
-import { Search } from "lucide-react"
+import { Key, Search } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 import VerifModal from "./VerifModal"
 
@@ -56,7 +56,7 @@ const App = () => {
             </div>
             <div className="w-full flex justify-center gap-3">
               <div className="relative mt-6 w-[76%]">
-                <input onChange={(e) => setSearch(e.target.value)} type="text" id="search" placeholder="Masukkan NIM" className="w-full border border-primary rounded-md p-2 font-poppins" />
+                <input onKeyDown={(e) => { if (e.key === 'Enter') { handleModal() } }} onChange={(e) => setSearch(e.target.value)} type="text" id="search" placeholder="Masukkan NIM" className="w-full border border-primary rounded-md p-2 font-poppins" />
                 <Search className="absolute translate-y-[-50%] right-3 top-[50%] h-4 w-4 text-gray-500" />
               </div>
               <div className="mt-6 flex justify-center items-center">
