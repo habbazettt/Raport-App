@@ -55,7 +55,7 @@ const StatusPage = () => {
 
                         <button
                             onClick={() => navigate(`/raport/${nim}`)}
-                            className={`bg-white ${santri?.status == "LULUS" ? "text-green-600" : "text-red-600"} rounded-lg text-lg shadow-md px-4 py-2 absolute bottom-10`}
+                            className={`bg-white ${santri?.status == "LULUS" ? "text-green-600" : "text-red-600"} rounded-lg text-lg shadow-md px-4 py-2 absolute bottom-10 z-50`}
                         >Lihat Raport</button>
 
                         <div>
