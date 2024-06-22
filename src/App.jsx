@@ -22,7 +22,7 @@ const App = () => {
   }, [data])
 
   const handleSearch = (e) => {
-    navigate(`/status/${search}`)
+    navigate(`/raport/${search}`)
     console.log(search);
   }
 
