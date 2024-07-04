@@ -34,6 +34,7 @@ const DetailsPage = () => {
     }
 
     const santri = data.find((item) => item.nim == nim)
+    console.log(santri);
 
     return (
         <div>
@@ -97,6 +98,11 @@ const DetailsPage = () => {
                                 <div className="flex justify-between font-bold mt-0.5">
                                     <h1>Keterangan:</h1>
                                     <h1>{santri?.status}</h1>
+                                </div>
+
+                                <div className="flex justify-between font-bold mt-0.5">
+                                    <h1>Pembagian Kamar :</h1>
+                                    <h1>{santri?.kamar}</h1>
                                 </div>
                             </div>
 
